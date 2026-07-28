@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url("../backgrimg.jpg") no-repeat center center/cover;
+    background-attachment:fixed;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px;
+}
+
+nav{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:20px;
+
+}
+
+nav a{
+
+text-decoration:none;
+padding:12px 25px;
+border:2px solid hotpink;
+border-radius:30px;
+color:#000;
+font-weight:600;
+transition:.4s;
+
+}
+
+nav a:hover{
+
+background:hotpink;
+color:#fff;
+transform:translateY(-5px);
+
+}
+
+
+/* ================= HEADING ================= */
+
+.heading{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+    background:rgba(255,255,255,.85);
+    text-align:center;
+    padding:35px;
+    border-radius:20px;
+}
+
+.heading h1{
+    color:#ff1493;
+    font-size:45px;
+}
+
+.heading h2{
+    color:#0099cc;
+    margin-top:10px;
+}
+
+/* ================= MENU ================= */
+
+.menu{
+    width:90%;
+    max-width:1300px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card-content h3{
+    color:#c2185b;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+.menu{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.heading h1{
+    font-size:38px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.navbar{
+    gap:10px;
+    padding:15px;
+}
+
+.navbar a{
+    padding:10px 16px;
+    font-size:14px;
+}
+
+.heading{
+    padding:25px;
+}
+
+.heading h1{
+    font-size:32px;
+}
+
+.heading h2{
+    font-size:20px;
+}
+
+.menu{
+    width:95%;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.card img{
+    height:220px;
+}
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+.heading h1{
+    font-size:28px;
+}
+
+.heading h2{
+    font-size:18px;
+}
+
+.navbar a{
+    width:100%;
+    text-align:center;
+}
+
+.card img{
+    height:200px;
+}
+
+.card-content{
+    padding:15px;
+}
+
+}
+    </style>
+
+</head>
+<body>
+    
+
+<nav class="navbar">
+
+<a href="project.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="menu.html">MENU</a>
+<a href="order.html">ORDER ONLINE</a>
+<a href="contact.html">CONTACT</a>
+<a href="workshop.html">WORKSHOPS</a>
+
+</nav>
+
+<div class="heading">
+    <h1>Cup Cake</h1>
+    <h2>Delicious Flavours</h2>
+</div>
+
+<div class="menu">
+
+<div class="card">
+
+<img src="img3.jpg">
+
+<div class="card-content">
+<h3>Classic Red Velvet</h3>
+<p>Soft, moist red velvet cupcake topped with creamy frosting for a rich and delicious taste.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img.jpg">
+
+<div class="card-content">
+<h3>Chocolate Vanilla</h3>
+<p>Chocolate sponge with smooth vanilla cream that melts in your mouth.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img7.jpg">
+
+<div class="card-content">
+<h3>Double Chocolate</h3>
+<p>Loaded with premium chocolate and topped with rich chocolate frosting.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="cupcake4.jpg">
+
+<div class="card-content">
+<h3>Gluten-Free Red Velvet</h3>
+<p>A healthy gluten-free version without compromising the delicious taste.</p>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="menu">
+
+<div class="card">
+
+<img src="img3.jpg">
+
+<div class="card-content">
+<h3>Classic Red Velvet</h3>
+<p>Soft, moist red velvet cupcake topped with creamy frosting for a rich and delicious taste.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img.jpg">
+
+<div class="card-content">
+<h3>Chocolate Vanilla</h3>
+<p>Chocolate sponge with smooth vanilla cream that melts in your mouth.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img7.jpg">
+
+<div class="card-content">
+<h3>Double Chocolate</h3>
+<p>Loaded with premium chocolate and topped with rich chocolate frosting.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="cupcake4.jpg">
+
+<div class="card-content">
+<h3>Gluten-Free Red Velvet</h3>
+<p>A healthy gluten-free version without compromising the delicious taste.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img4.jpg">
+
+<div class="card-content">
+<h3>Sugar-Free Chocolate</h3>
+<p>Perfect for those who love chocolate while reducing sugar intake.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img6.jpg">
+
+<div class="card-content">
+<h3>Sugar-Free Vanilla</h3>
+<p>Light vanilla sponge with a smooth cream topping for guilt-free enjoyment.</p>
+</div>
+
+</div>
+
+</div>
+
+    
+</body>
+</html>

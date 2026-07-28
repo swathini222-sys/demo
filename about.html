@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:url("../backgrimg.jpg") no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/* Navigation */
+
+.a{
+    padding:30px;
+    text-align:center;
+}
+
+.a a{
+    display:inline-block;
+    text-decoration:none;
+    color:#000;
+    background:#fff;
+    border:3px solid rgb(187,76,168);
+    padding:12px 22px;
+    margin:10px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.5s;
+    animation:slideDown 1s ease;
+}
+
+.a a:hover{
+    background:linear-gradient(45deg,#ff69b4,#ffcc70);
+    color:white;
+    transform:translateY(-8px) scale(1.1);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+/* Main Box */
+
+.div{
+    width:85%;
+    margin:40px auto;
+    background:rgba(255,255,255,.92);
+    border:4px dashed rgb(218,137,212);
+    border-radius:20px;
+    padding:40px;
+    animation:fadeUp 1.5s ease;
+    overflow:hidden;
+}
+
+/* Images */
+
+.div img{
+    width:420px;
+    max-width:100%;
+    border-radius:20px;
+    transition:.6s;
+    animation:float 4s ease-in-out infinite;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.div img:hover{
+    transform:scale(1.1) rotate(4deg);
+    box-shadow:0 20px 40px rgba(255,105,180,.6);
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    color:#8b4513;
+    margin:30px 0;
+    font-size:42px;
+    animation:zoomIn 1.5s;
+}
+
+/* Paragraph */
+
+p{
+    text-align:justify;
+    line-height:32px;
+    font-size:20px;
+    color:#5a3d1b;
+    margin:20px 0;
+    transition:.4s;
+}
+
+p:hover{
+    color:#d63384;
+    transform:translateX(10px);
+}
+
+/* Animations */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(80px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        transform:scale(.5);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .a a{
+        display:block;
+        margin:12px auto;
+        width:220px;
+    }
+
+    .div{
+        width:95%;
+        padding:20px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    p{
+        font-size:17px;
+        line-height:28px;
+    }
+
+    .div img{
+        width:100%;
+    }
+}
+       
+    </style>
+</head>
+<body>
+    <div class="a">
+    <center>
+     <a href="project.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="menu.html">MENU</a>
+    <a href="order.html">ORDER ONLICE</a>
+    <a href="contact.html">CONTACT</a> 
+    <a href="workshop.html">WORKSHOPS</a><br>
+</center>
+</div>
+
+     <div class="div">
+    <center><img src="cupcake.jpg"></center>
+    <h1>Our Story </h1>
+    <p> I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+    <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
+    <center><img src="bakes.jpg"></center>
+    
+</div>    
+</div>
+</body>
+</html>

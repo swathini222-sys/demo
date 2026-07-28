@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:url("../backgrimg.jpg") center/cover fixed;
+
+}
+
+/* Navigation */
+
+header{
+
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+nav{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:20px;
+
+}
+
+nav a{
+
+text-decoration:none;
+padding:12px 25px;
+border:2px solid hotpink;
+border-radius:30px;
+color:#000;
+font-weight:600;
+transition:.4s;
+
+}
+
+nav a:hover{
+
+background:hotpink;
+color:#fff;
+transform:translateY(-5px);
+
+}
+
+/* Slider */
+
+.slider{
+
+overflow:hidden;
+margin:30px auto;
+width:95%;
+
+}
+
+.slide-track{
+
+display:flex;
+width:calc(300px * 8);
+animation:scroll 20s linear infinite;
+
+}
+
+.slide-track img{
+
+width:300px;
+height:220px;
+object-fit:cover;
+margin:10px;
+border-radius:15px;
+transition:.5s;
+
+}
+
+.slide-track img:hover{
+
+transform:scale(1.1);
+
+}
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-1200px);
+}
+
+}
+
+/* Cards */
+
+.menu{
+
+width:95%;
+margin:auto;
+display:grid;
+gap:30px;
+
+}
+
+.card{
+
+display:flex;
+align-items:center;
+background:rgba(255,255,255,.9);
+border-radius:20px;
+padding:20px;
+box-shadow:0 15px 40px rgba(0,0,0,.2);
+transition:.5s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+box-shadow:0 25px 60px rgba(255,20,147,.4);
+
+}
+
+.card img{
+
+width:280px;
+height:200px;
+border-radius:20px;
+object-fit:cover;
+transition:.5s;
+
+}
+
+.card img:hover{
+
+transform:scale(1.08) rotate(2deg);
+
+}
+
+.content{
+
+padding:20px;
+
+}
+
+.content h2{
+
+font-size:30px;
+margin-bottom:15px;
+
+}
+
+.content p{
+
+font-size:18px;
+margin-bottom:20px;
+line-height:1.6;
+
+}
+
+.buttons{
+
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
+}
+
+button{
+
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:hotpink;
+color:#fff;
+font-size:16px;
+cursor:pointer;
+transition:.4s;
+
+}
+
+button:hover{
+
+background:#ff1493;
+transform:scale(1.08);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+
+gap:10px;
+
+}
+
+nav a{
+
+padding:10px 15px;
+font-size:14px;
+
+}
+
+.card{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.card img{
+
+width:100%;
+height:230px;
+
+}
+
+.content h2{
+
+font-size:24px;
+
+}
+
+.content p{
+
+font-size:16px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+}
+
+.slide-track img{
+
+width:220px;
+height:170px;
+
+}
+
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<a href="project.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="order.html">Order</a>
+<a href="contact.html">Contact</a>
+<a href="workshop.html">Workshops</a>
+
+</nav>
+
+</header>
+
+<section class="slider">
+
+<div class="slide-track">
+
+<img src="bake1.jpg">
+<img src="cake3.jpg">
+<img src="h1.jpg">
+<img src="h2.jpg">
+
+<img src="bake1.jpg">
+<img src="cake3.jpg">
+<img src="h1.jpg">
+<img src="h2.jpg">
+
+</div>
+
+</section>
+
+<section class="menu">
+
+<div class="card">
+
+<img src="img.jpg">
+
+<div class="content">
+
+<h2>Chocolate Vanilla</h2>
+
+<p>
+A delicious vanilla sponge filled with rich chocolate cream.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img3.jpg">
+
+<div class="content">
+
+<h2>Double Chocolate</h2>
+
+<p>
+Loaded with premium dark chocolate and creamy frosting.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img4.jpg">
+
+<div class="content">
+
+<h2>Red Velvet</h2>
+
+<p>
+Soft and moist gluten-free red velvet cake.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img6.jpg">
+
+<div class="content">
+
+<h2>Sugar Free Chocolate</h2>
+
+<p>
+Healthy chocolate cake with zero added sugar.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img7.jpg">
+
+<div class="content">
+
+<h2>Sugar Free Vanilla</h2>
+
+<p>
+Creamy vanilla cake prepared with sugar-free ingredients.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+</section>
+
+<section class="menu">
+
+<div class="card">
+
+<img src="img.jpg">
+
+<div class="content">
+
+<h2>Chocolate Vanilla</h2>
+
+<p>
+A delicious vanilla sponge filled with rich chocolate cream.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img3.jpg">
+
+<div class="content">
+
+<h2>Double Chocolate</h2>
+
+<p>
+Loaded with premium dark chocolate and creamy frosting.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img4.jpg">
+
+<div class="content">
+
+<h2>Red Velvet</h2>
+
+<p>
+Soft and moist gluten-free red velvet cake.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img6.jpg">
+
+<div class="content">
+
+<h2>Sugar Free Chocolate</h2>
+
+<p>
+Healthy chocolate cake with zero added sugar.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="img7.jpg">
+
+<div class="content">
+
+<h2>Sugar Free Vanilla</h2>
+
+<p>
+Creamy vanilla cake prepared with sugar-free ingredients.
+</p>
+
+<div class="buttons">
+
+<button>Order Now</button>
+<button>Cancel</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+</body>
+</html>
